@@ -41,7 +41,7 @@ export class CronapiComponent implements OnInit {
     .subscribe({
       next: (resp) => {
         console.log(resp);
-        this.message = 'Cron Task Executed'
+        this.message = 'CRON task scheduled'
       },
       error: (error) => {
         console.log(error);
