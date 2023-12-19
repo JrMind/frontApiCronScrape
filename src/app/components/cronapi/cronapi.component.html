@@ -1,0 +1,20 @@
+<form [formGroup]="cronform" (ngSubmit)="callCron()">
+    <input  type="text"
+            placeholder="Cron Expression"
+            formControlName="cronexpression"
+            class="input-form"
+    >
+    <input  type="text"
+            placeholder="Url"
+            formControlName="url"
+            class="input-form"
+    >
+    <p *ngIf="message" >
+        {{ message }}
+    </p>   
+    <button type="submit" class="button-9" role="button"> 
+        call cron service
+    </button>
+</form> 
+
+<!-- <button (click)="callCron()">call cron service</button> -->
